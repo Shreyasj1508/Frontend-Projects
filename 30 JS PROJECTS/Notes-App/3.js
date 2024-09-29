@@ -3,7 +3,7 @@ const createBtn = document.querySelector(".Btn");
 
 function showNotes() {
   const savedNotes = JSON.parse(localStorage.getItem("notes")) || []; // Parse notes from localStorage, handle null case
-  notesContainer.innerHTML = ""; // Clear container before rendering saved notes
+  notesContainer.innerHTML = ""; // Clear container before rendering saved notes 
 
   savedNotes.forEach((noteText) => {
     let inputBox = document.createElement("p");
@@ -21,7 +21,7 @@ function showNotes() {
 
     addKeyupListener(inputBox); // Attach event listener to handle edits
   });
-}
+}  
 
 function updateStorage() {
   const allNotes = Array.from(document.querySelectorAll(".input-box")).map(note =>
