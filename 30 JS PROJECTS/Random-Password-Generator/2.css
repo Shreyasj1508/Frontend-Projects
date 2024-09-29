@@ -10,7 +10,8 @@ body {
     color: #fff;
 }
 
-.container {
+.container 
+{
     margin: 12%;
     width: 90%;
     max-width: 700px;
@@ -19,7 +20,7 @@ body {
 .display {
     width: 100%;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
     background: #fff;
     color: #333;
     display: flex;
@@ -38,7 +39,6 @@ body {
     color: #019f55;
     border-bottom: 4px solid #019f55;
     padding-bottom: 7px;
-
 }
 
 .display img {
