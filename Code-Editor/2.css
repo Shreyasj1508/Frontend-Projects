@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.code-editor-container {
+    width: 100%;
+    height: 70%;
+    background-color: rgb(12, 17, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.code {
+    width: 450px;
+    height: 450px;
+    background-color: rgb(12, 17, 20);
+    box-shadow: 2px 2px black;
+    border: 2px solid rgba(255, 255, 255, 0.201);
+    border-radius: 20px;
+    overflow: auto;
+    position: relative;
+}
+
+.head-editor {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(12, 17, 20);
+    box-shadow: 2px 4px 10px black;
+    border-radius: 0px 0px 36px 36px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left-head span {
+    color: rgba(255, 255, 255, 0.493);
+    font-size: 20px;
+}
+
+.left-head {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.right-head img {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.right-head img:hover {
+    scale: 128%;
+}
+
+.code textarea {
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: rgb(12, 17, 20);
+    border: none;
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    color: white;
+    padding: 20px;
+    resize: none;
+    font-size: 22px;
+}
+
+.output-container {
+    width: 100%;
+    height: 30%;
+    box-shadow: 2px -4px 10px rgb(36, 71, 72);
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 20px;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.output-head {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(12, 17, 20);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    padding: 23px;
+}
+
+.output-head img {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.output-head img:hover {
+    scale: 128%;
+}
+#out{
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: auto;
+    background-color: white;
+
+}
+
+.output-full-active{
+    height: 100%;
+}
+#full{
+    transition: all 1s;
+}
+
+.html-input::selection{
+    background-color: rgb(158, 82, 15);
+}
+.js-input::selection{
+    background-color: rgb(152, 150, 17);
+}
