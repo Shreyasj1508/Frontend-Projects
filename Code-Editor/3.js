@@ -21,6 +21,7 @@ full.addEventListener("click", () => {
   }
 });
 
+
 copy.forEach((e) => {
   e.addEventListener("click", () => {
     if (e.classList.contains("copy1")) {

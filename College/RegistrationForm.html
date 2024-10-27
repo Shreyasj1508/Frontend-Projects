@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Registration Form</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div class="container">
+        <h2> Faculty Registration Form</h2>
+        <form action="#" method="POST">
+         
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Faculty Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="address"><i class="fas fa-map-marker-alt"></i> Address</label>
+                <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="contact"><i class="fas fa-phone"></i> Contact Number</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter contact number" required>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" required>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="domain"><i class="fas fa-book"></i> Domain</label>
+                <select id="domain" name="domain" required>
+                    <option value="">Select Domain</option>
+                    <option value="computer_science">Computer Science</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="physics">Physics</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="engineering">Engineering</option>
+                </select>
+            </div>
+
+            
+            <div class="form-group">
+                <label><i class="fas fa-building"></i> Departments</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="department" value="research"> Research</label>
+                    <label><input type="checkbox" name="department" value="administration"> Administration</label>
+                    <label><input type="checkbox" name="department" value="teaching"> Teaching</label>
+                    <label><input type="checkbox" name="department" value="consulting"> Consulting</label>
+                    <label><input type="checkbox" name="department" value="development"> Development</label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
